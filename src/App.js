@@ -28,7 +28,7 @@ const Blogs = lazy(() => import("./Pages/Blog/Blogs"))
 
 export default function App() {
     return (
-        <Router>
+        <Router basename="/iPower">
             <Suspense fallback={<SpinnerExample />}>
                 <ScrollTop />
                 <Routes>
