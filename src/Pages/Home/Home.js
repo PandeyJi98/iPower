@@ -8,7 +8,7 @@ import About from './About'
 // import Whyhm from './Whyhm'
 import Test from './Test'
 import Service from './Service'
-import Sample from './Sample/Sample'
+// import Sample from './Sample/Sample'
 import Hmprocess from './Hmprocess'
 import PageHelmet from '../../component/shared/PageHelmet'
 export default class Home extends Component {
@@ -31,8 +31,8 @@ export default class Home extends Component {
                 <About />
                 {/* <Whyhm /> */}
                 <Service />
-                <Sample />
-                <Hmprocess />
+                {/* <Sample /> */}
+                {/* <Hmprocess /> */}
                 <Test />
                 <Footer />
             </>

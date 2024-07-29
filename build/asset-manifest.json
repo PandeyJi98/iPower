@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/iPower/static/css/main.b97a7ca8.css",
-    "main.js": "/iPower/static/js/main.666f91e1.js",
+    "main.js": "/iPower/static/js/main.c87c6033.js",
     "static/js/352.dadd6661.chunk.js": "/iPower/static/js/352.dadd6661.chunk.js",
     "static/js/56.ba132fb6.chunk.js": "/iPower/static/js/56.ba132fb6.chunk.js",
     "static/css/949.d4b7d8ef.chunk.css": "/iPower/static/css/949.d4b7d8ef.chunk.css",
@@ -42,7 +42,7 @@
     "static/media/RunningStep.jpg": "/iPower/static/media/RunningStep.d65f181da19b0c832dcd.jpg",
     "index.html": "/iPower/index.html",
     "main.b97a7ca8.css.map": "/iPower/static/css/main.b97a7ca8.css.map",
-    "main.666f91e1.js.map": "/iPower/static/js/main.666f91e1.js.map",
+    "main.c87c6033.js.map": "/iPower/static/js/main.c87c6033.js.map",
     "352.dadd6661.chunk.js.map": "/iPower/static/js/352.dadd6661.chunk.js.map",
     "56.ba132fb6.chunk.js.map": "/iPower/static/js/56.ba132fb6.chunk.js.map",
     "949.d4b7d8ef.chunk.css.map": "/iPower/static/css/949.d4b7d8ef.chunk.css.map",
@@ -71,6 +71,6 @@
   },
   "entrypoints": [
     "static/css/main.b97a7ca8.css",
-    "static/js/main.666f91e1.js"
+    "static/js/main.c87c6033.js"
   ]
 }

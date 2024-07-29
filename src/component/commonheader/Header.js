@@ -38,9 +38,9 @@ export default class Header extends Component {
                                 <li className="nav-item">
                                     <NavLink className="active text-dark nav-link ms-3 colorEffect" aria-current="page" to="/blog">View Daily Activity</NavLink>
                                 </li>
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <NavLink className="active text-dark nav-link ms-3 colorEffect" aria-current="page" to="/gallery">Our Team</NavLink>
-                                </li>
+                                </li> */}
                                 {/* <li className="nav-item">
                                     <NavLink className="active text-dark nav-link ms-3 colorEffect" aria-current="page" to="/ourProducts">Our Products</NavLink>
                                 </li> */}

@@ -49,7 +49,7 @@ export default class Service extends Component {
                         <div className="card m-auto h-100">
                             <img src='assets/image/services/software_development.webp' className="card-img-top" alt="Software Development" title='Software Development' height="210" width="210" />
                             <div className="card-body">
-                                <h2 className="card-title fs-4"><strong>21-Days Challenget</strong></h2>
+                                <h2 className="card-title fs-4"><strong>21-Days Challenge</strong></h2>
                                 <p className="card-text">A 21-day challenge motivates by instilling discipline, forming habits, and offering a structured approach to achieving personal goals.</p>
                                 <NavLink to="/software-development" className="btn btn-primary">Read More</NavLink>
                             </div>
