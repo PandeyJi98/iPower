@@ -10,7 +10,7 @@ export default class Section extends Component {
                 {/* <div style={{ width: "100%", background: "blue", backgroundImage: `url("assets/image/A.jpg")`, backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}> </div> */}
                 {/* <div className='mainContainer' style={{ width: "100%", backgroundImage: `url("assets/image/A.jpg")`, backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
                 </div> */}
-                <img src={mainImage} class="img-fluid h-15 height-style" alt="Responsive image" />
+                <img src={mainImage} class="img-fluid h-15 height-style" alt="Responsive image" loading='lazy' />
                 <div className='scroll-text'>
                     <marquee direction="left" scrollamount="13">
                         <p className='marque_text'>MYB - Scholarship Program for 8 to 12 class student. Stay tuned for more update</p>

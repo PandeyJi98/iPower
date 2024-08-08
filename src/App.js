@@ -3,7 +3,7 @@ import React, { lazy, Suspense } from 'react';
 import ScrollTop from "./component/ScrollTop";
 import SpinnerExample from "./component/SpinnerExample";
 import Error from "./Pages/ErrorPage/Error";
-import OurProducts from "./Pages/MYB/MYBScholarship";
+// import OurProducts from "./Pages/MYB/MYBScholarship";
 const Erp  = lazy(()=> import('./Pages/Products/Erp'));
 const Crm = lazy(()=>import('./Pages/Products/Crm'));
 const Home = lazy(() => import('./Pages/Home/Home'));
@@ -19,9 +19,7 @@ const BusinessAnalysis = lazy(() => import("./Pages/Services/BussinessAnalysis/B
 const SocialMediaMarketing = lazy(() => import("./Pages/Services/SocialMarketing/SocialMediaMarketing"))
 const ContactUs = lazy(() => import("./Pages/Contact/ContactUs"))
 const Login = lazy(() => import("./Pages/login/Login"))
-const BlogDetail = lazy(() => import("./Pages/Blog/BlogDetail"))
-const WriteBlog = lazy(() => import("./Pages/Blog/WriteBlog"))
-const Blogs = lazy(() => import("./Pages/Blog/Blogs"))
+
 
 
 
@@ -45,12 +43,11 @@ export default function App() {
                     <Route exact path="/business-analysis" element={<BusinessAnalysis />}></Route>
                     <Route exact path="/socialMedia-marketing" element={<SocialMediaMarketing />}></Route>
                     <Route exact path="/gallery" element={<Gallery />}></Route>
-                    <Route exact path="/ourProducts" element={<OurProducts />}></Route>
+                    {/* <Route exact path="/ourProducts" element={<OurProducts />}></Route> */}
                     <Route exact path="/*" element={<Error />}></Route>
-                    <Route exact path="/blog" element={<Blogs />}></Route>
+                    {/* <Route exact path="/blog" element={<Blogs />}></Route> */}
                     <Route exact path="/admin-panel/123" element={<Login />}></Route>
-                    <Route exact path="/blog/:id" element={<BlogDetail />}></Route>
-                    <Route exact path="/write-blog" element={<WriteBlog />} />
+                
                     <Route  exact path="/product/erp" element={<Erp/>}/>
                     <Route exact path="/product/crm" element={<Crm/>} />
                 </Routes>

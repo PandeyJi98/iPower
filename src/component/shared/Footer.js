@@ -1,80 +1,72 @@
-import React, { Component } from 'react'
-import { Link, NavLink } from 'react-router-dom'
-// get our fontawesome imports
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp, faFacebook, faLinkedin, faTwitter, faInstagram, faPinterest } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import './Footer.css'; // Import the CSS file
 
-export default class Footer extends Component {
-    render() {
-        return (
-            <>
-                {/* contact footer  */}
-                <div style={{ backgroundColor: "#f6f6f6" }} className="container-fluid pt-3 pt-3 pb-3">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-12 col-md-6 ps-5 text-dark">
-                                <h6 style={{fontSize:'1.5rem'}}><b>Looking for the Best IT Business Solutions?</b></h6>
-                                <p className="fs-5">iPower is here, We will help you.</p>
-                            </div>
-                            <div className="col-12 col-md-6 text-center d-flex justify-content-center align-items-center ">
-                                <NavLink to="/contactUs"><button className="contactbtn">Get a quote</button></NavLink>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* footer */}
-                <div className="container-fluid bg-dark">
-                    <div className="container p-5 text-white ">
-                        <div className="row justify-content-around">
-                            <div className="col-12 col-lg-4">
-                                <h6 style={{fontSize:'1.5rem'}}>Contact Details</h6>
-                                <hr className="container" style={{ height: "5px", backgroundColor: "blueviolet", color: "blueviolet", }} />
-                                <ul className="list-unstyled">
-                                    <li className="pb-2">UG-21, First Floor, Bestech City Center Mall, Dharuhera, 123106</li>
-                                    <li className="pb-2">+91-8059465353</li>
-                                    <li className="pb-2">+91-8979287631</li>
-                                    <li><h6 className="text-warning" style={{fontSize:'1.25rem'}}>Open hours:</h6>
-                                        <p>Mon-Sat: 9:30am - 6pm, <br /> Sunday: CLOSED</p></li>
-                                </ul>
-                            </div>
-                            <div className="col-12 col-lg-4">
-                                <h4>Services</h4>
-                                <hr className="container" style={{ height: "5px", backgroundColor: "blueviolet", color: "blueviolet", }} />
-                                <ul className="list-unstyled">
-                                    <li className="pb-1"><NavLink className="text-white" to="/web-designing">Web Designing</NavLink></li>
-                                    <li className="pb-1"><NavLink className="text-white" to="/web-development">Web Development</NavLink></li>
-                                    <li className="pb-1"><NavLink className="text-white" to="/app-development">App Development</NavLink></li>
-                                    <li className="pb-1"><NavLink className="text-white" to="/digital-marketing">Digital Marketing</NavLink></li>
-                                    <li className="pb-1"><NavLink className="text-white" to="/automated-system">Automated System</NavLink></li>
-                                    <li className="pb-1"><NavLink className="text-white" to="/software-development">Software Development</NavLink></li>
-                                    <li className="pb-1"><NavLink className="text-white" to="/business-analysis">Business Analysis</NavLink></li>
-                                    <li><NavLink className="text-white" to="/socialMedia-marketing">Social Media Marketing</NavLink></li>
-                                </ul>
-                            </div>
-                            <div className="col-12 col-lg-4">
-                                <h4>Social Media</h4>
-                                <hr className="container" style={{ height: "5px", backgroundColor: "blueviolet", color: "blueviolet",}} />
-                                <ul className="list-unstyled">
-                                    <li className="pb-2"><a className="text-white" target='_blank' href="https://wa.me/8059465353"><img src='/assets/image/SociaI_Icons/Whatsapp.png' style={{height:'25px', width:'26px'}} alt='Social Icon ' />&nbsp;+91-8059465353</a></li>
-                                    <li className="pb-2"><a className="text-white" target='_blank' href="mailto:conatct@hminnovance.com"><img src='/assets/image/SociaI_Icons/Gmail.png' style={{height:'25px', width:'25px'}} alt='Social Icon' />&nbsp;<span style={{fontSize:'17px'}}>contact@hminnovance.com</span></a></li>
-                                    <li className="pb-2"><a className="text-white" target='_blank' href="https://www.facebook.com/hminnovancellp/"><img src='/assets/image/SociaI_Icons/Facebook.png' style={{height:'25px', width:'25px'}} alt='Social Icon' />&nbsp;www.facebook.com</a></li>
-                                    <li className="pb-2"><a className="text-white" target='_blank' href="https://www.linkedin.com/company/90863549/admin/"><img src='/assets/image/SociaI_Icons/Linkedin.png' style={{height:'25px', width:'25px'}} alt='Social Icon' />&nbsp;www.linkedin.com</a></li>
-                                    <li className="pb-2"><a className="text-white" target='_blank' href="https://twitter.com/HMInnovanceLLP"><img src='/assets/image\SociaI_Icons/Twitter.png' style={{height:'30px', width:'30px'}} alt='Social Icon' />&nbsp;www.twitter.com</a></li>
-                                    <li className="pb-2"><a className="text-white" target='_blank' href="https://www.instagram.com/hminnovancellp/"><img src='/assets/image/SociaI_Icons/Instagram.png' style={{height:'33px', width:'30px'}} alt='Social Icon' />&nbsp;www.instagram.com</a></li>
-                                    <li className="pb-2"><a className="text-white" target='_blank' href="https://in.pinterest.com/HMINNOVACE/"><img src='/assets/image/SociaI_Icons/Pintrest.png'style={{height:'30px', width:'30px'}} alt='Social Icon' />&nbsp;www.pinterest.com</a></li>
-                                </ul>
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* copyright */}
-                <div style={{ backgroundColor: 'blueviolet' }} className="container-fluid">
-                    <div className="row">
-                        <div className="col-12 text-white d-flex justify-content-center">
-                            <p className="text-center pt-2">&copy;&nbsp;Copyright All Right Reserved {(new Date().getFullYear())}, iPower | <a className="text-white" href="#">T&C</a></p>
-                        </div>
-                    </div>
-                </div>
-            </>
-        )
-    }
-}
+const Footer = () => {
+  return (
+    <>
+      {/* Contact Footer */}
+      <div className="contact-footer py-4">
+        <div className="container">
+          <div className="row text-center text-md-start">
+            <div className="col-12 col-md-6 mb-3 mb-md-0">
+              <h6 className="contact-heading"><b>Looking to Get Fit?</b></h6>
+              <p className="contact-text">iPower is here to help you achieve your fitness goals with our tailored solutions and expert guidance.</p>
+            </div>
+            <div className="col-12 col-md-6 d-flex justify-content-center align-items-center">
+              <NavLink to="/contactUs">
+                <button className="btn btn-primary btn-lg">Get a Quote</button>
+              </NavLink>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Footer */}
+      <div className="footer bg-dark text-white">
+        <div className="container py-5">
+          <div className="row text-center text-md-start">
+            <div className="col-12 col-lg-6 mb-4 mb-lg-0">
+              <h6 className="footer-heading text-warning text-center">Contact Details</h6>
+              <ul className="list-unstyled mt-3">
+                <li className="pb-2"><i className="fas fa-map-marker-alt"></i>Gudgaon 48-Sector Arial Mall</li>
+                <li className="pb-2"><i className="fas fa-phone"></i> +91-9811490414</li>
+                {/* <li>
+                  <h6 className="text-warning">Open Hours:</h6>
+                  <p>Mon-Sat: 9:30am - 6pm<br />Sunday: CLOSED</p>
+                </li> */}
+              </ul>
+            </div>
+            <div className="col-12 col-lg-6 mb-4 mb-lg-0 ">
+              <div className='footerCard'>
+              <h4 className="footer-heading text-warning text-center">Follow Us</h4>
+              <ul className="list-unstyled footer-ul-content">
+              <li className="social-icon px-3"><a target='_blank' className='socialContainer containerFour' rel="noopener noreferrer" href="/"><FontAwesomeIcon icon={faWhatsapp} size="2x" className=" socialSvg instagramSvg" /></a></li>
+                <li className="social-icon px-3"><a target='_blank' className='socialContainer containerThree' rel="noopener noreferrer" href="/"><FontAwesomeIcon icon={faFacebook} className="socialSvg instagramSvg" size="2x" /></a></li>
+                <li className="social-icon px-3"><a target='_blank' className='socialContainer containerOne' rel="noopener noreferrer" href="/"><FontAwesomeIcon icon={faLinkedin} size="2x" className="socialSvg instagramSvg" /></a></li>
+                <li className="social-icon px-3"><a target='_blank' className='socialContainer containerTwo' rel="noopener noreferrer" href="/"><FontAwesomeIcon icon={faTwitter} size="2x" className="socialSvg instagramSvg" /></a></li>
+                <li className="social-icon px-3"><a target='_blank' className='socialContainer containerOne' rel="noopener noreferrer" href="/"><FontAwesomeIcon icon={faInstagram} size="2x" className="socialSvg instagramSvg" /></a></li>
+                <li className="social-icon px-3"><a target='_blank' className='socialContainer containerfive' rel="noopener noreferrer" href="/"><FontAwesomeIcon icon={faPinterest} size="2x" className="socialSvg instagramSvg" /></a></li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* href="https://www.instagram.com/hminnovancellp/ */}
+      {/* Copyright */}
+      <div className="footer-bottom bg-blueviolet text-white py-3">
+        <div className="container text-center">
+          <p className="mb-0">&copy; {new Date().getFullYear()} iPower | <a className="text-white" href="#">Terms & Conditions</a></p>
+        </div>
+      </div>
+            
+
+
+    </>
+  );
+};
+
+export default Footer;

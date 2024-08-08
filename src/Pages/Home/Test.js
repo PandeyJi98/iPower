@@ -1,4 +1,5 @@
 import React from 'react'
+import corolMan from "../../Images/colorful-man.png"
 
 const Test = () => {
     return (
@@ -24,10 +25,10 @@ const Test = () => {
                                     <p className="mb-3 p-2">It's remarkable how you have managed to keep everything running smothly. I really apperciate your smart work and perserverance.</p>
                                     <div className="row">
                                         <div className="col-12 col-md-4 d-flex mb-4 mb-md-0 justify-content-center justify-content-md-end">
-                                            <img src="./assets/image/review/client_1.jpg" className="d-block" style={{ width: "100px", height: "80px", borderRadius: '50%' }} alt="Innovative Web Design and Development Company In Delhi NCR" />
+                                            <img src={corolMan} loading='lazy' className="d-block" style={{ width: "100px", height: "80px", borderRadius: '50%' }} alt="Innovative Web Design and Development Company In Delhi NCR" />
                                         </div>
                                         <div className="col-12 col-md-8 d-flex">
-                                            <h5><strong>Bhagwan Singh<p>Compnay Name: Goodwill homz</p></strong></h5>
+                                            <h5><strong>Naresh Tiwari<p>Compnay Name: Goodwill homz</p></strong></h5>
                                         </div>
                                     </div>
                                 </div>
