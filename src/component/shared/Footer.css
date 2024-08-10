@@ -104,6 +104,11 @@
     transition-duration: .3s;
   }
   
+  .containerSix:hover {
+    background-color: #2a1ab7;
+    transition-duration: .3s;
+  }
+  
   .socialContainer:active {
     transform: scale(0.9);
     transition-duration: .3s;

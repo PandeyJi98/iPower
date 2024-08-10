@@ -189,6 +189,8 @@ height: 100%;
 
 .nav-shadow ul {
   padding: 0px !important;
+  opacity: 9;
+  z-index: 9999;
 }
 
 .nav-shadow ul li {
@@ -630,4 +632,199 @@ select {
     top: 50px;
     left: 18px;
   }
+}
+
+
+.e-card {
+  background: transparent;
+  box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+  position: relative;
+  width: 100%; /* Set width to 100% */
+  /* border-radius: 16px; */
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  width: 100%; /* Set width to 100% */
+  height: 2000%; /* Adjust height to fill the .e-card */
+  opacity: 0.6;
+  left: 0;
+  top: 0;
+  background: linear-gradient(744deg,#40cfff,#ffdd6e 60%,#00d8eb);
+}
+
+.wave:nth-child(2) {
+  top: 40%; 
+  left: -35%;
+}
+.wave:nth-child(3) {
+  top: 40% ;
+  left: -30%;
+}
+.wave:nth-child(4){
+  top: 40%; 
+  left: -15%;
+}
+.wave:nth-child(5) {
+  top:40%;
+  left: 25%;
+}
+.wave:nth-child(6) {
+  top: 40%; 
+  left: 5%;
+}
+
+.wave:nth-child(7) {
+  top: 40%; 
+  left: 55%;
+}
+.wave:nth-child(8) {
+  top: 40%; 
+  left: -55%;
+}
+.wave:nth-child(9) {
+  top: 40%; 
+  left: -55%;
+}
+.wave:nth-child(10) {
+  top: 40%;
+left:35%
+}
+
+.wave:nth-child(11) {
+  top: 55%; /* Adjust if needed */
+}
+.wave:nth-child(12) {
+  top: 40%;
+left:45%
+}
+
+.wave:nth-child(13) {
+  top: 45%;
+left:55%}
+
+.playing .wave {
+  border-radius: 40%;
+  animation: wave 3000ms infinite linear;
+}
+
+.wave {
+  border-radius: 40%;
+  animation: wave 55s infinite linear;
+}
+
+.playing .wave:nth-child(2) {
+  animation-duration: 4000ms;
+}
+
+.wave:nth-child(2) {
+  animation-duration: 50s;
+}
+
+.playing .wave:nth-child(3) {
+  animation-duration: 5000ms;
+}
+.playing .wave:nth-child(6) {
+  animation-duration: 6000ms;
+}
+.playing .wave:nth-child(9) {
+  animation-duration: 7000ms;
+}
+.playing .wave:nth-child(12) {
+  animation-duration: 8000ms;
+}
+
+.wave:nth-child(3) {
+  animation-duration: 45s;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.project-info {
+  padding:40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  top: -50px;
+}
+
+.project-title {
+  font-weight: 500;
+  font-size: 1.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: black;
+}
+
+.lighter {
+  font-size: 0.9em;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tag {
+  font-weight: lighter;
+  color: grey;
+}
+
+/*DELETE THIS TWO LINE*/
+.delete {
+  background-color: #b2b2fd;
+}
+
+.Testimonisal-card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+/*IF USING IMAGES*/
+
+.Testimonisal-card {
+  background-color: white;
+  color: black;
+  width: 85%;
+  max-height: 330px;
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.card-img {
+  position: relative;
+  top: -20px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Change the .card-img div to .card-img img to use img*/
+.Testimonisal-card-img a,
+.Testimonisal-card-img div {
+  height: 180px;
+  width: 55%;
+  /* Change this width here to change the width of the color/image */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  flex-basis: content;
+}
+
+.Testimonisal-card-imgs {
+  transition: all 0.5s;
 }

@@ -18,7 +18,7 @@ const Footer = () => {
             </div>
             <div className="col-12 col-md-6 d-flex justify-content-center align-items-center">
               <NavLink to="/contactUs">
-                <button className="btn btn-primary btn-lg">Get a Quote</button>
+                <button className="btn btn-primary btn-lg">Talk to Us</button>
               </NavLink>
             </div>
           </div>
@@ -45,10 +45,10 @@ const Footer = () => {
               <ul className="list-unstyled footer-ul-content">
               <li className="social-icon px-3"><a target='_blank' className='socialContainer containerFour' rel="noopener noreferrer" href="/"><FontAwesomeIcon icon={faWhatsapp} size="2x" className=" socialSvg instagramSvg" /></a></li>
                 <li className="social-icon px-3"><a target='_blank' className='socialContainer containerThree' rel="noopener noreferrer" href="/"><FontAwesomeIcon icon={faFacebook} className="socialSvg instagramSvg" size="2x" /></a></li>
-                <li className="social-icon px-3"><a target='_blank' className='socialContainer containerOne' rel="noopener noreferrer" href="/"><FontAwesomeIcon icon={faLinkedin} size="2x" className="socialSvg instagramSvg" /></a></li>
+                <li className="social-icon px-3"><a target='_blank' className='socialContainer containerSix' rel="noopener noreferrer" href="/"><FontAwesomeIcon icon={faLinkedin} size="2x" className="socialSvg instagramSvg" /></a></li>
                 <li className="social-icon px-3"><a target='_blank' className='socialContainer containerTwo' rel="noopener noreferrer" href="/"><FontAwesomeIcon icon={faTwitter} size="2x" className="socialSvg instagramSvg" /></a></li>
                 <li className="social-icon px-3"><a target='_blank' className='socialContainer containerOne' rel="noopener noreferrer" href="/"><FontAwesomeIcon icon={faInstagram} size="2x" className="socialSvg instagramSvg" /></a></li>
-                <li className="social-icon px-3"><a target='_blank' className='socialContainer containerfive' rel="noopener noreferrer" href="/"><FontAwesomeIcon icon={faPinterest} size="2x" className="socialSvg instagramSvg" /></a></li>
+                <li className="social-icon px-3"><a target='_blank' className='socialContainer containerFive' rel="noopener noreferrer" href="/"><FontAwesomeIcon icon={faPinterest} size="2x" className="socialSvg instagramSvg" /></a></li>
               </ul>
               </div>
             </div>

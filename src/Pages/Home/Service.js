@@ -7,6 +7,8 @@ import walkImage from "../../Images/walking-foot.png"
 import plant from "../../Images/plantChallenege.jpg"
 import tripChallenge from "../../Images/road-trip.png"
 import swimming from "../../Images/swimming.jpg"
+import challange21 from "../../Images/21-days-challange.png"
+import challenge30 from "../../Images/30-day-challange.jpg"
 
 export default class Service extends Component {
     render() {
@@ -50,7 +52,7 @@ export default class Service extends Component {
                     </div>
                     <div className="col-12 col-md-6 col-xl-3  mb-5 mb-md-5 mb-xl-0" data-aos="zoom-out-right">
                         <div className="card m-auto h-100">
-                            <img src='assets/image/services/software_development.webp' loading='lazy' className="card-img-top" alt="iPower" title="iPower" height="210" width="210" />
+                            <img src={challange21} loading='lazy' className="card-img-top" alt="iPower" title="iPower" height="210" width="210" />
                             <div className="card-body">
                                 <h2 className="card-title fs-4"><strong>21-Days Challenge</strong></h2>
                                 <p className="card-text">A 21-day challenge motivates by instilling discipline, forming habits, and offering a structured approach to achieving personal goals.</p>
@@ -62,7 +64,7 @@ export default class Service extends Component {
                 <div className="row mt-lg-5">
                     <div className="col-12 col-md-6 col-xl-3 mb-5 mb-md-5 mb-xl-0" data-aos="zoom-in-right">
                         <div className="card m-auto h-100">
-                            <img src='assets/image/services/automated_system.webp' loading='lazy' className="card-img-top" alt="iPower" title="iPower" height="210" width="210" />
+                            <img src={challenge30} loading='lazy' className="card-img-top" alt="iPower" title="iPower" height="210" width="210" />
                             <div className="card-body">
                                 <h2 className="card-title fs-4"><strong>30-Days Challenge</strong></h2>
                                 <p className="card-text ">A 30-day challenge motivates by providing a clear timeframe, encouraging consistency, and fostering determination to achieve lasting personal improvement.</p>
