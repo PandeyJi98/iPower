@@ -1,0 +1,21 @@
+.testStyle {
+    /* line-height: 39.3127px; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* vertical-align: baseline;
+    letter-spacing: normal; */
+font-family:  sans-serif Helvetica Tahoma Helvetica Helvetica Bold;
+Font: Helvetica Tahoma;
+}
+.height-style{
+    height: 30vw;
+    width: 100%;
+    object-fit: cover;
+}
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
