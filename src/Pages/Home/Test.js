@@ -46,7 +46,7 @@ const Test = () => {
                                     </article>
                                 </div>
                                 {/* Card 2 */}
-                                <div style={{ backgroundColor: "#f6f6f6" }} className="carousel-item pb-5" data-bs-interval="3000">
+                                <div style={{ display:"flex", justifyContent:"center" }} className="carousel-item pb-5" data-bs-interval="3000">
                                     <article className="Testimonisal-card">
                                     <div className="Testimonisal-card-img">
                                            <div className="Testimonisal-card-imgs  pv delete"> <img src={rahul} loading='lazy' alt="Rahul" className="d-block" style={{ width: "100%", height: "100%", borderRadius: '5%' }} /></div>
@@ -64,7 +64,7 @@ const Test = () => {
                                     </article>
                                 </div>
                                 {/* Card 3 */}
-                                <div style={{ backgroundColor: "#f6f6f6" }} className="carousel-item pb-5" data-bs-interval="3000">
+                                <div style={{ display:"flex", justifyContent:"center" }} className="carousel-item pb-5" data-bs-interval="3000">
                                     <article className="Testimonisal-card">
                                     <div className="Testimonisal-card-img">
                                            <div className="Testimonisal-card-imgs  pv delete"> <img src={gaurav} loading='lazy' alt="Ankit" className="d-block" style={{ width: "100%", height: "100%", borderRadius: '5%' }} /></div>
