@@ -17,66 +17,70 @@ const Test = () => {
                         <h5>Testimonials</h5>
                         <h5><b>Few of Our Client’s feedback of users!</b></h5>
                         <p>Clients Reviews:</p>
-                        <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
+                        <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
                             <div className="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
                             <div className="carousel-inner p-3">
                                 {/* Card 1 */}
-                                <div style={{ display:"flex", justifyContent:"center" }} className="carousel-item active pb-5" data-bs-interval="3000">
+                                <div className="carousel-item active pb-5">
                                     <article className="Testimonisal-card">
                                         <div className="Testimonisal-card-img">
-                                           <div className="Testimonisal-card-imgs  pv delete"> <img src={ankit} alt="Ankit" className="d-block" style={{ width: "100%", height: "100%", borderRadius: '5%' }} /></div>
+                                            <div className="Testimonisal-card-imgs pv delete">
+                                                <img src={ankit} alt="Ankit" className="d-block" style={{ width: "100%", height: "100%", borderRadius: '5%' }} />
+                                            </div>
                                         </div>
                                         <div className="project-info">
-                                            <div className="flex">
+                                            <div className="d-flex flex-column flex-md-row  mt-3 mt-md-0  justify-content-between align-items-center">
                                                 <div className="project-title">Ankit</div>
-                                                <span className="tag">HR Manager</span>
+                                                <span className="tag mt-2 mt-md-0">HR Manager</span>
                                             </div>
                                             <span className="lighter">
-                                            "I Power’s cycling challenge was impeccably well-organized. Every aspect of the event, from registration to the route logistics,
-                                             was handled with precision. Their seamless execution ensured that our team could focus on enjoying the ride and the camaraderie. 
-                                             This level of organization truly sets I Power apart."
+                                                "I Power’s cycling challenge was impeccably well-organized. Every aspect of the event, from registration to the route logistics,
+                                                was handled with precision. Their seamless execution ensured that our team could focus on enjoying the ride and the camaraderie. 
+                                                This level of organization truly sets I Power apart."
                                             </span>
                                         </div>
                                     </article>
                                 </div>
                                 {/* Card 2 */}
-                                <div style={{ display:"flex", justifyContent:"center" }} className="carousel-item pb-5" data-bs-interval="3000">
+                                <div className="carousel-item pb-5">
                                     <article className="Testimonisal-card">
-                                    <div className="Testimonisal-card-img">
-                                           <div className="Testimonisal-card-imgs  pv delete"> <img src={rahul} loading='lazy' alt="Rahul" className="d-block" style={{ width: "100%", height: "100%", borderRadius: '5%' }} /></div>
+                                        <div className="Testimonisal-card-img">
+                                            <div className="Testimonisal-card-imgs pv delete">
+                                                <img src={rahul} loading='lazy' alt="Rahul" className="d-block" style={{ width: "100%", height: "100%", borderRadius: '5%' }} />
+                                            </div>
                                         </div>
                                         <div className="project-info">
-                                            <div className="flex">
+                                            <div className="d-flex flex-column flex-md-row mt-3 mt-md-0  justify-content-between align-items-center">
                                                 <div className="project-title">Rahul</div>
-                                                <span className="tag">IT (Software Tester)</span>
+                                                <span className="tag mt-2 mt-md-0">IT (Software Tester)</span>
                                             </div>
                                             <span className="lighter">
-                                            "Our experience with I Power was highlighted by their commitment to providing hygienic and rich food. The post-ride meals
-                                             were not only delicious but also prepared with the utmost attention to cleanliness and quality. This thoughtful detail made the event even more enjoyable and satisfying for everyone involved."
+                                                "Our experience with I Power was highlighted by their commitment to providing hygienic and rich food. The post-ride meals
+                                                were not only delicious but also prepared with the utmost attention to cleanliness and quality. This thoughtful detail made the event even more enjoyable and satisfying for everyone involved."
                                             </span>
                                         </div>
                                     </article>
                                 </div>
                                 {/* Card 3 */}
-                                <div style={{ display:"flex", justifyContent:"center" }} className="carousel-item pb-5" data-bs-interval="3000">
+                                <div className="carousel-item pb-5">
                                     <article className="Testimonisal-card">
-                                    <div className="Testimonisal-card-img">
-                                           <div className="Testimonisal-card-imgs  pv delete"> <img src={gaurav} loading='lazy' alt="Ankit" className="d-block" style={{ width: "100%", height: "100%", borderRadius: '5%' }} /></div>
+                                        <div className="Testimonisal-card-img">
+                                            <div className="Testimonisal-card-imgs pv delete">
+                                                <img src={gaurav} loading='lazy' alt="Gaurav" className="d-block" style={{ width: "100%", height: "100%", borderRadius: '5%' }} />
+                                            </div>
                                         </div>
                                         <div className="project-info">
-                                            <div className="flex">
+                                            <div className="d-flex flex-column flex-md-row  mt-3 mt-md-0  justify-content-between align-items-center">
                                                 <div className="project-title">Gaurav</div>
-                                                <span className="tag">PA (Accountant)</span>
+                                                <span className="tag mt-2 mt-md-0">PA (Accountant)</span>
                                             </div>
                                             <span className="lighter">
-                                            "I Power’s meticulous planning was evident throughout our cycling challenge. They left no stone unturned in their
-                                             detailed preparations, ensuring a smooth and engaging experience. From the well-mapped routes to the precise timing of breaks, every element was thoughtfully orchestrated."
+                                                "I Power’s meticulous planning was evident throughout our cycling challenge. They left no stone unturned in their
+                                                detailed preparations, ensuring a smooth and engaging experience. From the well-mapped routes to the precise timing of breaks, every element was thoughtfully orchestrated."
                                             </span>
                                         </div>
                                     </article>

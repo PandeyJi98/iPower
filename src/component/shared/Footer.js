@@ -31,7 +31,7 @@ const Footer = () => {
             <div className="col-12 col-lg-6 mb-4 mb-lg-0">
               <h6 className="footer-heading text-warning text-center">Contact Details</h6>
               <ul className="list-unstyled mt-3">
-                <li className="pb-2"><i className="fas fa-map-marker-alt"></i>Gudgaon 48-Sector Arial Mall</li>
+                <li className="pb-2"><i className="fas fa-map-marker-alt"></i>M3M International Financial Centre, Golf Course Ext Rd, Badshahpur, Sector 66, Gurugram, Haryana 122002</li>
                 <li className="pb-2"><i className="fas fa-phone"></i> +91-9811490414</li>
                 {/* <li>
                   <h6 className="text-warning">Open Hours:</h6>
